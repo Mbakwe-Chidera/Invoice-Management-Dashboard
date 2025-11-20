@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Support Ticket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" />
+
+    <label for="sidebar-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="dashboard">
+      <div class="sidebar">
+        <div class="logo">InvoiceFlow</div>
+        <nav class="nav-menu">
+          <div class="nav-item">📊 Dashboard</div>
+          <div class="nav-item">📄 Invoices</div>
+          <div class="nav-item">👥 Clients</div>
+          <div class="nav-item">📈 Reports</div>
+          <div class="nav-item">⚙️ Settings</div>
+        </nav>
+      </div>
+
+      <div class="main-content">
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label class="filter-label">Status:</label>
+            <select class="filter-select">
+              <option>All</option>
+              <option>Paid</option>
+              <option>Pending</option>
+              <option>Overdue</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">From:</label>
+            <input type="date" class="filter-input" />
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">To:</label>
+            <input type="date" class="filter-input" />
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">Amount:</label>
+            <input
+              type="number"
+              class="filter-input"
+              placeholder="Min"
+              style="width: 100px"
+            />
+            <input
+              type="number"
+              class="filter-input"
+              placeholder="Max"
+              style="width: 100px"
+            />
+          </div>
+
+          <button class="filter-btn">Apply</button>
+        </div>
+
+        <div class="invoice-area">
+          <div class="header">
+            <h1>Invoices</h1>
+            <div class="header-stats">
+              <div class="stat-card">
+                <div class="stat-label">Total Revenue</div>
+                <div class="stat-value">$124,580</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Pending</div>
+                <div class="stat-value">$28,340</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Overdue</div>
+                <div class="stat-value">$12,450</div>
+              </div>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search invoices..."
+          />
+
+          <div class="invoice-list">
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-001</div>
+              <div class="invoice-client">Chidera Corporation Ltd.</div>
+              <div class="invoice-amount">$8,500.00</div>
+              <div class="invoice-date">Oct 15, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-002</div>
+              <div class="invoice-client">Oly Inc.</div>
+              <div class="invoice-amount">$12,340.00</div>
+              <div class="invoice-date">Oct 12, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-003</div>
+              <div class="invoice-client">Mira Ventures LLC</div>
+              <div class="invoice-amount">$5,750.00</div>
+              <div class="invoice-date">Oct 10, 2025</div>
+              <div>
+                <span class="status-badge status-overdue">Overdue</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-004</div>
+              <div class="invoice-client">IJ Studio Pro</div>
+              <div class="invoice-amount">$15,200.00</div>
+              <div class="invoice-date">Oct 8, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-005</div>
+              <div class="invoice-client">Mayor Corp Co.</div>
+              <div class="invoice-amount">$9,800.00</div>
+              <div class="invoice-date">Oct 5, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-006</div>
+              <div class="invoice-client">Invent Labs</div>
+              <div class="invoice-amount">$22,450.00</div>
+              <div class="invoice-date">Sep 28, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-007</div>
+              <div class="invoice-client">Creative Solutions Group</div>
+              <div class="invoice-amount">$6,700.00</div>
+              <div class="invoice-date">Sep 20, 2025</div>
+              <div>
+                <span class="status-badge status-overdue">Overdue</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-008</div>
+              <div class="invoice-client">Enterprise Systems Corp</div>
+              <div class="invoice-amount">$18,900.00</div>
+              <div class="invoice-date">Sep 15, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-009</div>
+              <div class="invoice-client">Blue Ocean Trading</div>
+              <div class="invoice-amount">$7,250.00</div>
+              <div class="invoice-date">Sep 12, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-010</div>
+              <div class="invoice-client">Quantum Media Agency</div>
+              <div class="invoice-amount">$11,600.00</div>
+              <div class="invoice-date">Sep 8, 2025</div>
+              <div>
+                <span class="status-badge status-overdue">Overdue</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-011</div>
+              <div class="invoice-client">Peak Performance Consulting</div>
+              <div class="invoice-amount">$14,300.00</div>
+              <div class="invoice-date">Sep 5, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-012</div>
+              <div class="invoice-client">Urban Development Group</div>
+              <div class="invoice-amount">$19,850.00</div>
+              <div class="invoice-date">Sep 1, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-013</div>
+              <div class="invoice-client">Stellar Tech Solutions</div>
+              <div class="invoice-amount">$8,900.00</div>
+              <div class="invoice-date">Aug 28, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-014</div>
+              <div class="invoice-client">Horizon Financial Services</div>
+              <div class="invoice-amount">$16,420.00</div>
+              <div class="invoice-date">Aug 25, 2025</div>
+              <div>
+                <span class="status-badge status-overdue">Overdue</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-015</div>
+              <div class="invoice-client">NextGen Robotics Inc.</div>
+              <div class="invoice-amount">$23,700.00</div>
+              <div class="invoice-date">Aug 20, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-016</div>
+              <div class="invoice-client">Green Earth Sustainability</div>
+              <div class="invoice-amount">$5,300.00</div>
+              <div class="invoice-date">Aug 18, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-017</div>
+              <div class="invoice-client">Alpha Manufacturing Co.</div>
+              <div class="invoice-amount">$12,100.00</div>
+              <div class="invoice-date">Aug 15, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-018</div>
+              <div class="invoice-client">Digital Dreams Studio</div>
+              <div class="invoice-amount">$9,450.00</div>
+              <div class="invoice-date">Aug 10, 2025</div>
+              <div>
+                <span class="status-badge status-overdue">Overdue</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-019</div>
+              <div class="invoice-client">Prime Logistics Network</div>
+              <div class="invoice-amount">$17,800.00</div>
+              <div class="invoice-date">Aug 5, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-020</div>
+              <div class="invoice-client">Velocity Sports Management</div>
+              <div class="invoice-amount">$13,650.00</div>
+              <div class="invoice-date">Aug 1, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-021</div>
+              <div class="invoice-client">Crystal Clear Analytics</div>
+              <div class="invoice-amount">$10,200.00</div>
+              <div class="invoice-date">Jul 28, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-022</div>
+              <div class="invoice-client">Fusion Energy Systems</div>
+              <div class="invoice-amount">$21,900.00</div>
+              <div class="invoice-date">Jul 25, 2025</div>
+              <div>
+                <span class="status-badge status-overdue">Overdue</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-023</div>
+              <div class="invoice-client">Sapphire Real Estate</div>
+              <div class="invoice-amount">$15,400.00</div>
+              <div class="invoice-date">Jul 20, 2025</div>
+              <div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-024</div>
+              <div class="invoice-client">Phoenix Aviation Services</div>
+              <div class="invoice-amount">$28,300.00</div>
+              <div class="invoice-date">Jul 15, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+            <div class="invoice-item">
+              <div class="invoice-id">INV-2024-025</div>
+              <div class="invoice-client">Cascade Healthcare Group</div>
+              <div class="invoice-amount">$8,750.00</div>
+              <div class="invoice-date">Jul 12, 2025</div>
+              <div><span class="status-badge status-paid">Paid</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
